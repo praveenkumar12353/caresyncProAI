@@ -61,10 +61,7 @@ This enables proactive interventions, reduces hospital readmission rates, and ul
 | Folder/File | Description |
 |:---|:---|
 | `force-app/` | Salesforce DX source code (Apex classes, Flows, LWC, Data Cloud config) |
-| `.github/workflows/` | GitHub Actions CI/CD pipelines |
-| `scripts/` | Automation scripts for Data Cloud ingestion simulations |
-| `readme/agent_prompts/` | Prompt templates and fine-tuning documentation for the AI agent |
-| `manifest/` | Deployment manifests (package.xml) |
+| `Presentation/` | The presentation deck
 
 ---
 
