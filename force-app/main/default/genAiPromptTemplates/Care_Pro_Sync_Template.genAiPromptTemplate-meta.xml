@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>5QdcUIj8b7qR0ykCZHJuzZRU/tM7Nm1B1qUs9n7Z6+k=_6</activeVersionIdentifier>
+    <developerName>Care_Pro_Sync_Template</developerName>
+    <masterLabel>Care Pro Sync Template</masterLabel>
+    <templateVersions>
+        <content>Provide detailed analysis of the patients in {!$Input:PatientInfo} from the documents in {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}. Review the documents of care plan and iot details and check the patient with discrepancy in iot as compared to the care plan provided in the documents {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}.Only display the patient&apos;s information if there are discrepancies found else display no discrepancy found.
+</content>
+        <inputs>
+            <apiName>PatientInfo</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>PatientInfo</masterLabel>
+            <referenceName>Input:PatientInfo</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:PatientInfo}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5QdcUIj8b7qR0ykCZHJuzZRU/tM7Nm1B1qUs9n7Z6+k=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Provide detailed analysis of the patients in {!$Input:PatientInfo} from the documents in {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}. Review the documents of care plan and iot details and check the patient with discrepancy in iot as compared to the care plan provided in the documents {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}.Only display the patient&apos;s information if there are discrepancies found else display no discrepancy found.
+</content>
+        <inputs>
+            <apiName>PatientInfo</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>PatientInfo</masterLabel>
+            <referenceName>Input:PatientInfo</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:PatientInfo}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5QdcUIj8b7qR0ykCZHJuzZRU/tM7Nm1B1qUs9n7Z6+k=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Provide detailed analysis of the patients in {!$Input:PatientInfo} from the documents in {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}. Review the documents of care plan and iot details and check the patient with discrepancy in iot as compared to the care plan provided in the documents {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}.Only display the patient&apos;s information along with the patientId if there are discrepancies found else display no discrepancy found.
+</content>
+        <inputs>
+            <apiName>PatientInfo</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>PatientInfo</masterLabel>
+            <referenceName>Input:PatientInfo</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:PatientInfo}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5QdcUIj8b7qR0ykCZHJuzZRU/tM7Nm1B1qUs9n7Z6+k=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Provide detailed analysis of the patients in {!$Input:PatientInfo} from the documents in {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}. Review the documents of care plan and iot details and check the patient with discrepancy in iot as compared to the care plan provided in the documents {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}.Only display the patient&apos;s information along with the patientId if there are discrepancies found and make sure of the discrepancy before displaying, else dont display any information.
+</content>
+        <inputs>
+            <apiName>PatientInfo</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>PatientInfo</masterLabel>
+            <referenceName>Input:PatientInfo</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:PatientInfo}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5QdcUIj8b7qR0ykCZHJuzZRU/tM7Nm1B1qUs9n7Z6+k=_4</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Provide detailed analysis of the patients in {!$Input:PatientInfo} from the documents in {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}. Review the documents of care plan and iot details and check the patient with discrepancy in iot as compared to the care plan provided in the documents {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}.Compare the care plan and iot information thoroughly and if the care plan targets are achieved do not display the information. Only display the patient info summary and why there is issues when there are discrepancies found and the target plan was not achieved
+</content>
+        <inputs>
+            <apiName>PatientInfo</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>PatientInfo</masterLabel>
+            <referenceName>Input:PatientInfo</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:PatientInfo}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5QdcUIj8b7qR0ykCZHJuzZRU/tM7Nm1B1qUs9n7Z6+k=_5</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Analyze the patients listed in {!$Input:PatientInfo}. Review their Care Plan documents and IoT data provided in {!$EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217.results}. Thoroughly compare each patient&apos;s Care Plan targets against their incoming IoT readings. If the patient&apos;s readings meet the Care Plan targets, do not display any information. Only output for patients where discrepancies exist between Care Plan goals and IoT data. For each such patient, provide:
+Patient ID
+Patient Summary (brief)
+Description of the discrepancy
+Analysis of why Care Plan targets were not met
+Focus only on patients where care goals were not achieved. Ignore patients who are stable and meeting targets.
+</content>
+        <inputs>
+            <apiName>PatientInfo</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>PatientInfo</masterLabel>
+            <referenceName>Input:PatientInfo</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:PatientInfo}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_PatientInfoSheetDMO_Retriever_1Cx_o3Z20b36217</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5QdcUIj8b7qR0ykCZHJuzZRU/tM7Nm1B1qUs9n7Z6+k=_6</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
