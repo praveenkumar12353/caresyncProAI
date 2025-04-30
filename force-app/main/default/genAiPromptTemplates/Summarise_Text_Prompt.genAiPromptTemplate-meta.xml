@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>5QdcUIj8b7qR0ykCZHJuzZRU/tM7Nm1B1qUs9n7Z6+k=_1</activeVersionIdentifier>
+    <developerName>Summarise_Text_Prompt</developerName>
+    <masterLabel>Summarise Text Prompt</masterLabel>
+    <templateVersions>
+        <content>Give me a summary of all the contents in {!$Input:Summary}
+</content>
+        <inputs>
+            <apiName>Summary</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Summary</masterLabel>
+            <referenceName>Input:Summary</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>5QdcUIj8b7qR0ykCZHJuzZRU/tM7Nm1B1qUs9n7Z6+k=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
